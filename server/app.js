@@ -13,7 +13,7 @@ const path = require("path");
 const Game = require("./models/Game");
 const QuotableApi = require("./QuotableApi");
 // Connect Database
-app.use(cors)
+app.use(cors())
 
 connectDB();
 io.on("connect", (socket) => {
